@@ -1,0 +1,131 @@
+.app { min-height: 100vh; display: grid; grid-template-rows: auto 1fr auto; }
+
+.header {
+  padding: 10px 20px;
+  border-bottom: 1px solid var(--border);
+  background: rgba(0,0,0,0.2);
+  backdrop-filter: blur(6px);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.header-inner {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.header-top-row {
+  position: relative; 
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 6px; 
+}
+
+.header-logo {
+  position: absolute; 
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+.header-logo-inner {
+  max-width: 55px; 
+  max-height: 55px;
+}
+
+.header-logo-inner img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.header-top-left {
+  display: flex;
+  align-items: center;
+  flex: 1; 
+  min-width: 0;
+}
+
+.header-top-text {
+  display: flex;
+  flex-direction: row;
+  line-height: 1.2;
+  align-items: center;
+  gap: 16px;
+}
+
+.header-user-info {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.header-top-greeting {
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.header-top-email {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.header-buttons-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.header-action-btn {
+  padding: 6px 12px;
+  font-size: 0.85rem;
+}
+
+.header-top-right {
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+  justify-content: flex-end;
+  flex: 1;
+  min-width: 0;
+}
+
+.header-top-continue {
+  padding: 6px 10px;
+  font-size: 0.8rem;
+}
+
+.nav {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.nav-main {
+  justify-content: flex-start;
+}
+
+.brand { color: var(--text); text-decoration: none; font-weight: 700; }
+
+.nav a { color: var(--text); text-decoration: none; padding: 6px 10px; border-radius: 6px; }
+
+.nav a.active { background: var(--card); }
+
+.container { padding: 24px; max-width: 1440px; margin: 0 auto; }
+
+.footer { border-top: 1px solid var(--border); padding: 12px 20px; color: var(--muted); }
+
+.wave {
+  display: inline-block;
+  font-size: 1.5rem;
+}
