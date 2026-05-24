@@ -1,5 +1,5 @@
 import React from 'react';
-import { Session, SessionExercise, ExerciseSet } from '../../../types/fitness';
+import type { Session, SessionExercise, ExerciseSet } from '../../../types/fitness';
 import { ConfirmModal } from '../../../components/ui/ConfirmModal';
 import { titleCaseName } from '../../../services/api';
 import { SetRow } from './components/SessionSetRows';

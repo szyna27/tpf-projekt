@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { addSet, updateSet } from '../../../../services/api';
-import { ExerciseSet } from '../../../../types/fitness';
+import type { ExerciseSet } from '../../../../types/fitness';
 import '../ActiveSession.css';
 
 export interface SetRowProps {
@@ -15,14 +15,14 @@ export interface SetRowProps {
 export function SetRow({ sessionId, exId, setObj, previous, onChange, onRemove }: SetRowProps) {
   const [w, setW] = useState<string>('');
   const [r, setR] = useState<string>('');
-  
+
   useEffect(() => {
     const weight = setObj.weight_kg;
     const reps = setObj.reps;
-    
+
     const hasWeight = weight && weight > 0;
     const hasReps = reps && reps > 0;
-    
+
     setW(hasWeight ? String(weight) : '');
     setR(hasReps ? String(reps) : '');
   }, [setObj.id, setObj.weight_kg, setObj.reps]);

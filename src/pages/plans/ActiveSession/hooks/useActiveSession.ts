@@ -7,7 +7,7 @@ import {
   discardSession,
   updateSessionExercise
 } from '../../../../services/api';
-import { Session, SessionExercise, ExerciseSet } from '../../../../types/fitness';
+import type { Session, SessionExercise, ExerciseSet } from '../../../../types/fitness';
 
 export function useActiveSession(session: Session, onUpdate: (s: Session) => void, onFinished: (s: Session) => void, onDiscarded: (id: number) => void) {
   const [local, setLocal] = useState<Session>(session);
@@ -50,10 +50,10 @@ export function useActiveSession(session: Session, onUpdate: (s: Session) => voi
     const [a, b] = [list[idx], list[j]];
     list[idx] = b;
     list[j] = a;
-    
+
     await updateSessionExercise(local.id, a.id, { order: j });
     await updateSessionExercise(local.id, b.id, { order: idx });
-    
+
     const upd = { ...local, exercises: list };
     setLocal(upd);
     onUpdate(upd);

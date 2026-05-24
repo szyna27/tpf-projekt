@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { updatePlanSet } from '../../../../services/api';
-import { ExerciseSet } from '../../../../types/fitness';
+import type { ExerciseSet } from '../../../../types/fitness';
 
 export interface PlanSetRowProps {
   planId: number;

@@ -1,6 +1,7 @@
 import { createTrainingPlan, addSessionExercise, titleCaseName } from '../../services/api';
 import { emitActiveSessionChanged } from '../../services/events';
-import ExerciseCatalogModal, { CatalogItem } from '../../components/exercises/ExerciseCatalogModal';
+import ExerciseCatalogModal from '../../components/exercises/ExerciseCatalogModal';
+import type { CatalogItem } from '../../components/exercises/ExerciseCatalogModal';
 import PlanCard from './components/PlanCard';
 import SessionModal from './ActiveSession';
 import { usePlans } from './hooks/usePlans';
@@ -42,7 +43,7 @@ export default function Plans() {
           }}>+ New Plan</button>
         </div>
         {errorMsg && (
-          <ActiveSessionAlert 
+          <ActiveSessionAlert
             errorMsg={errorMsg}
             setSession={setSession}
             setModalOpen={setModalOpen}

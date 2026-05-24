@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { getPlan } from '../../../services/api';
-import { Plan, Session } from '../../../types/fitness';
+import type { Plan, Session } from '../../../types/fitness';
 import '../Plans.css';
 
 export interface PlanCardProps {
@@ -49,14 +49,14 @@ export default function PlanCard({
           <button className="btn delete" onClick={onDelete}>Delete</button>
         </div>
       </div>
-      
+
       {/* Small summary badges */}
       <div className="plan-badges-row">
         <span className="plan-badge">
           Exercises: <strong>{(detail?.exercises || []).length}</strong>
         </span>
       </div>
-      
+
       {/* Exercises as chips */}
       <div className="plan-exercises-container">
         {(detail?.exercises || []).length === 0 ? (
