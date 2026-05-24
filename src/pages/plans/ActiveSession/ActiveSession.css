@@ -1,0 +1,221 @@
+/* ActiveSession.css */
+
+.session-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+  box-sizing: border-box;
+  z-index: 1000;
+}
+
+.session-modal-content {
+  width: 100%;
+  max-width: 950px;
+  max-height: 90vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+.modal-content.session-modal-content {
+  width: 100%;
+  max-width: 950px;
+}
+
+.session-modal-header h2 {
+  margin: 0;
+}
+
+.session-modal-actions {
+  gap: 8px;
+}
+
+.timer-badge {
+  pointer-events: none;
+}
+
+.session-add-row {
+  margin-top: 8px;
+  gap: 8px;
+}
+
+.session-exercises-list {
+  display: grid;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.session-exercise-card {
+  background: #0e131b;
+}
+
+.session-exercise-header {
+  gap: 12px;
+}
+
+.session-exercise-info {
+  gap: 10px;
+}
+
+.session-exercise-img-wrapper {
+  width: 56px;
+  height: 56px;
+  display: block;
+  overflow: hidden;
+  border-radius: 6px;
+  background: #111;
+}
+
+.session-exercise-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.session-exercise-no-img {
+  font-size: 10px;
+  color: #789;
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.session-exercise-tags {
+  font-size: 12px;
+  color: #9ab;
+  margin-top: 2px;
+}
+
+.session-exercise-actions {
+  gap: 8px;
+}
+
+/* Sets Container */
+.session-sets-container {
+  margin-top: 8px;
+  overflow-x: auto;
+}
+
+.session-exercise-set-grid {
+  grid-template-columns: 60px 100px 1fr 1fr 40px !important;
+}
+
+.set-prev-col {
+  font-size: 12px;
+  opacity: 0.5;
+  text-align: center;
+}
+
+.session-placeholder-row {
+  opacity: 0.85;
+}
+
+.set-table-header {
+  gap: 12px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  flex-wrap: nowrap;
+}
+
+.set-row, .placeholder-set-row {
+  gap: 12px;
+  margin-top: 6px;
+  flex-wrap: nowrap;
+}
+
+.placeholder-set-row {
+  opacity: 0.85;
+}
+
+.set-col-idx {
+  width: 60px;
+}
+
+.set-col-prev {
+  width: 140px;
+  font-size: 12px;
+  color: #9ab;
+}
+
+.set-col-input {
+  width: 70px;
+}
+
+.set-input {
+  width: 100%;
+  padding: 6px 8px;
+}
+
+.set-col-hint {
+  font-size: 12px;
+  color: #678;
+}
+
+.set-col-spacer {
+  width: 60px;
+}
+
+.btn-add-set {
+  margin-top: 8px;
+}
+
+/* Modals */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  display: grid;
+  place-items: center;
+}
+
+.modal-content {
+  width: min(520px, 95vw);
+}
+
+.modal-title {
+  margin-top: 0;
+}
+
+.modal-actions {
+  gap: 8px;
+}
+
+.time-input-row {
+  gap: 8px;
+}
+
+.time-label {
+  font-size: 12px;
+  opacity: 0.8;
+}
+
+.time-input {
+  width: 80px;
+}
+
+.dev-date-row {
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.dev-date-label {
+  font-size: 12px;
+  opacity: 0.8;
+}
+
+.dev-date-note {
+  font-size: 12px;
+}
+
+/* Helpers */
+.mt-3 { margin-top: 12px; }
+.justify-end { justify-content: flex-end; }
+.justify-between { justify-content: space-between; }
+.items-center { align-items: center; }
+.items-start { align-items: flex-start; }
+.flex-1 { flex: 1; }

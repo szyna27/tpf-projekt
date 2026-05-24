@@ -1,0 +1,131 @@
+.active-session-alert {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 12px;
+  border-radius: 8px;
+  background: #201a1a;
+  border: 1px solid #5a2;
+  color: #e6ffe6;
+  margin-bottom: 12px;
+}
+
+.active-session-alert .alert-icon {
+  font-size: 18px;
+}
+
+.active-session-alert .alert-message {
+  flex: 1;
+}
+
+.active-session-alert .close-btn {
+  /* specific close btn style if needed */
+}
+
+.plans-grid {
+  grid-template-columns: 1fr;
+}
+
+.plans-card {
+  grid-column: 1 / -1;
+}
+
+.plans-header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.plans-header {
+  margin: 0;
+}
+
+.plans-list {
+  display: grid;
+  gap: 16px;
+}
+
+/* Added for PlanCard.tsx */
+.plan-card {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.plan-card-header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+
+.plan-card-header-left,
+.plan-card-header-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.plan-card-title {
+  margin: 0;
+  padding: 0;
+}
+.plan-card-desc {
+  margin: 12px 0 0 0;
+  padding-top: 12px;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+.btn.delete {
+    background: transparent;
+    color: #ef4444; /* Soft red text */
+    border: 1px solid #7f1d1d; /* Dark red border */
+    box-shadow: none;
+}
+.btn.delete:hover {
+    background: rgba(239, 68, 68, 0.1); /* Faint red background on hover */
+    border-color: #b91c1c;
+    transform: translateY(-2px);
+}
+.plan-badges-row {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 14px;
+}
+.plan-badge {
+  font-size: 0.85rem;
+  padding: 4px 12px;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid var(--border);
+}
+.plan-exercises-container {
+  margin-top: 14px;
+}
+.plan-exercises-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.exercise-chip {
+  padding: 4px 12px;
+  border-radius: 999px;
+  background: rgba(100, 149, 237, 0.15);
+  border: 1px solid var(--border);
+  font-size: 0.85rem;
+}
+.btn-add-plan {
+  background-color: #5b2aa6; /* Primary brand purple */
+  color: white;
+  border: none;
+  font-weight: 600;
+}
+
+.btn-add-plan:hover {
+  background-color: #4a218a;
+  opacity: 1;
+}

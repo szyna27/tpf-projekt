@@ -1,0 +1,289 @@
+.exercise-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.65);
+  display: grid;
+  place-items: center;
+  z-index: 1100;
+  padding: 16px;
+}
+
+.exercise-modal-panel {
+  width: min(700px, 95vw);
+  max-height: 92vh;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.exercise-modal-panel--catalog {
+  width: min(600px, 95vw);
+  max-height: 85vh;
+}
+
+.exercise-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.exercise-modal-title {
+  margin: 0;
+  font-size: 20px;
+}
+
+.exercise-modal-close-ghost {
+  flex-shrink: 0;
+  background: transparent;
+  border: none;
+  color: var(--muted, #888);
+  font-size: 18px;
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 4px;
+  display: grid;
+  place-items: center;
+  transition: all 0.2s ease;
+}
+
+.exercise-modal-close-ghost:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+
+.exercise-modal-status {
+  margin: 0;
+}
+
+.exercise-modal-error {
+  color: #d55;
+  margin: 0;
+}
+
+.exercise-modal-content-area {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.exercise-modal-grid {
+  display: grid;
+  gap: 32px;
+  grid-template-columns: 160px 1fr;
+}
+
+.exercise-modal-preview-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.exercise-modal-preview-frame {
+  width: 150px;
+  height: 150px;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 2px dashed rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.02);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.exercise-modal-preview-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.exercise-modal-preview-placeholder {
+  font-size: 13px;
+  color: var(--muted, #888);
+}
+
+.exercise-modal-upload {
+  text-align: center;
+  width: 100%;
+}
+
+.exercise-modal-file-input {
+  display: none;
+}
+
+.exercise-modal-upload-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+}
+
+.exercise-modal-upload-buttons {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn-sm {
+  padding: 6px 12px;
+  font-size: 13px;
+}
+
+.exercise-modal-file-name {
+  font-size: 12px;
+  color: var(--muted, #888);
+  max-width: 140px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.exercise-modal-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.exercise-modal-field label,
+.exercise-modal-field-label {
+  display: block;
+  font-size: 13px;
+  opacity: 0.9;
+  text-align: left;
+  margin-bottom: 6px;
+  font-weight: 500;
+}
+
+.exercise-modal-input-full {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px 12px;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #fff;
+  color-scheme: dark;
+  transition: border-color 0.2s ease;
+}
+
+.exercise-modal-input-full:focus {
+  outline: none;
+  border-color: var(--primary, #00b8d4);
+}
+
+select.exercise-modal-input-full option {
+  background: #1a1f26;
+  color: #fff;
+}
+
+.exercise-modal-field-row {
+  display: flex;
+  gap: 16px;
+}
+
+.exercise-modal-field-row > * {
+  flex: 1;
+}
+
+.exercise-modal-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  margin-top: 8px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.exercise-modal-footer-left {
+  display: flex;
+  gap: 8px;
+}
+
+.exercise-modal-footer-right {
+  display: flex;
+  gap: 12px;
+}
+
+.exercise-catalog-search-row {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.exercise-catalog-search-input {
+  flex: 1;
+}
+
+.exercise-catalog-list {
+  margin-top: 12px;
+  display: grid;
+  gap: 4px;
+}
+
+.exercise-catalog-item {
+  display: grid;
+  grid-template-columns: 56px 1fr auto;
+  gap: 8px;
+  align-items: center;
+  width: 100%;
+  text-align: left;
+}
+
+.exercise-catalog-thumb {
+  width: 56px;
+  height: 56px;
+  display: block;
+  overflow: hidden;
+  border-radius: 6px;
+  background: #111;
+}
+
+.exercise-catalog-thumb-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.exercise-catalog-thumb-empty {
+  font-size: 10px;
+  color: #789;
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.exercise-catalog-details {
+  text-align: left;
+  overflow: hidden;
+}
+
+.exercise-catalog-name {
+  font-weight: 700;
+}
+
+.exercise-catalog-name--custom {
+  font-size: 11px;
+  color: #9ab;
+}
+
+.exercise-catalog-muscles {
+  font-size: 11px;
+  color: #9ab;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.exercise-catalog-kind {
+  font-size: 11px;
+  color: #9ab;
+  text-align: right;
+}
+
+.exercise-modal-inline-note {
+  margin-top: 6px;
+}
