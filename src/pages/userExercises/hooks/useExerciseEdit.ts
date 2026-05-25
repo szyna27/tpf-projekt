@@ -11,7 +11,7 @@ export interface UseExerciseEditOptions {
 export function useExerciseEdit({ exercise, onUpdated, onDeleted }: UseExerciseEditOptions) {
   const [name, setName] = useState(exercise.name);
   const [equipment, setEquipment] = useState(exercise.equipment ?? exercise.metadata?.equipments?.[0] ?? '');
-  const [primary, setPrimary] = useState(exercise.target_muscles?.[0] ?? exercise.metadata?.targetMuscles?.[0] ?? '');
+  const [primary, setPrimary] = useState(exercise.target_muscles?.[0] ?? exercise.metadata?.target_muscles?.[0] ?? '');
   const [saving, setSaving] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [imageUploading, setImageUploading] = useState(false);
@@ -22,7 +22,7 @@ export function useExerciseEdit({ exercise, onUpdated, onDeleted }: UseExerciseE
   useEffect(() => {
     setName(exercise.name);
     setEquipment(exercise.equipment ?? exercise.metadata?.equipments?.[0] ?? '');
-    setPrimary(exercise.target_muscles?.[0] ?? exercise.metadata?.targetMuscles?.[0] ?? '');
+    setPrimary(exercise.target_muscles?.[0] ?? exercise.metadata?.target_muscles?.[0] ?? '');
     setImageUrl(exercise.image_url || exercise.metadata?.image_url || '');
     setImageFile(null);
     setSaving(false);

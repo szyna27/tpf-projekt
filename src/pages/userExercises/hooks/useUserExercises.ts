@@ -7,7 +7,7 @@ export function useUserExercises() {
   const [items, setItems] = useState<UserExercise[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
-  const [attrs, setAttrs] = useState<ExerciseAttributes>({ equipments: [], targetMuscles: [] });
+  const [attrs, setAttrs] = useState<ExerciseAttributes>({ equipments: [], target_muscles: [] });
   const [query, setQuery] = useState('');
   
   const debouncedQuery = useDebounce(query, 250);

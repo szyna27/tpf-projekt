@@ -15,7 +15,7 @@ export interface ExerciseConfig {
 
 export interface ExerciseAttributes {
   equipments: string[];
-  targetMuscles: string[];
+  target_muscles: string[];
 }
 
 export interface CreatedExercise {

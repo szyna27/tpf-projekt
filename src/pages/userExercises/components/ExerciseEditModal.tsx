@@ -90,7 +90,7 @@ export default function ExerciseEditModal({ exercise, attributes, onClose, onUpd
                   <label>Primary Muscle</label>
                   <select className="exercise-modal-input-full" value={primary} onChange={e => setPrimary(e.target.value)}>
                     <option value="">—</option>
-                    {attributes.targetMuscles.map(m => <option key={m} value={m}>{m}</option>)}
+                    {attributes.target_muscles.map(m => <option key={m} value={m}>{m}</option>)}
                   </select>
                 </div>
               </div>

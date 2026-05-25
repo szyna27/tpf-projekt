@@ -9,7 +9,7 @@ export interface UseCustomExerciseFormOptions {
 
 export function useCustomExerciseForm({ onClose, onCreated }: UseCustomExerciseFormOptions) {
   const [loading, setLoading] = useState(true);
-  const [attrs, setAttrs] = useState<ExerciseAttributes>({ equipments: [], targetMuscles: [] });
+  const [attrs, setAttrs] = useState<ExerciseAttributes>({ equipments: [], target_muscles: [] });
   const [name, setName] = useState('');
   const [equipment, setEquipment] = useState('');
   const [primary, setPrimary] = useState('');

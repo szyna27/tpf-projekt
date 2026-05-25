@@ -49,10 +49,10 @@ export async function deleteUserExercise(id: number) {
   return true; 
 }
 export async function getExerciseAttributes() { 
-  return { 
+  return {
     equipments: ["Barbell", "Dumbbell", "Bodyweight", "Machine", "Cable", "Bands", "Kettlebell"], 
-    targetMuscles: ["Chest", "Back", "Legs", "Shoulders", "Biceps", "Triceps", "Core", "Quads", "Hamstrings"] 
-  }; 
+    target_muscles: ["Chest", "Back", "Legs", "Shoulders", "Biceps", "Triceps", "Core", "Quads", "Hamstrings"] 
+  };
 }
 export async function uploadUserExerciseImage(file: File) { 
   return new Promise<{ public_url: string }>((resolve, reject) => {
