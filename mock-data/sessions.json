@@ -1,0 +1,120 @@
+[
+  {
+    "id": 999,
+    "plan": 2,
+    "plan_id": 2,
+    "plan_name": "Plan FBW B",
+    "is_active": true,
+    "started_at": "2026-05-03T13:10:35.343Z",
+    "exercises": [
+      {
+        "id": 901,
+        "exercise_id": 4,
+        "exercise_name": "Cable incline fly (on stability ball)",
+        "name": "Cable incline fly (on stability ball)",
+        "image_url": "/media/27NNGFr.gif",
+        "target_muscles": [
+          "chest"
+        ],
+        "sets": [
+          {
+            "id": 9010,
+            "set_index": 1,
+            "reps": 10,
+            "weight_kg": 50,
+            "weight": 50,
+            "completed": true
+          },
+          {
+            "id": 9011,
+            "set_index": 2,
+            "reps": 10,
+            "weight_kg": 50,
+            "weight": 50,
+            "completed": true
+          },
+          {
+            "id": 9012,
+            "set_index": 3,
+            "reps": 10,
+            "weight_kg": 50,
+            "weight": 50,
+            "completed": true
+          }
+        ]
+      },
+      {
+        "id": 902,
+        "exercise_id": 5,
+        "exercise_name": "Kettlebell double alternating hang clean",
+        "name": "Kettlebell double alternating hang clean",
+        "image_url": "/media/a4F9Oyc.gif",
+        "target_muscles": [
+          "biceps"
+        ],
+        "sets": [
+          {
+            "id": 9020,
+            "set_index": 1,
+            "reps": 10,
+            "weight_kg": 50,
+            "weight": 50,
+            "completed": true
+          },
+          {
+            "id": 9021,
+            "set_index": 2,
+            "reps": 10,
+            "weight_kg": 50,
+            "weight": 50,
+            "completed": true
+          },
+          {
+            "id": 9022,
+            "set_index": 3,
+            "reps": 10,
+            "weight_kg": 50,
+            "weight": 50,
+            "completed": true
+          }
+        ]
+      },
+      {
+        "id": 903,
+        "exercise_id": 6,
+        "exercise_name": "Dumbbell contralateral forward lunge",
+        "name": "Dumbbell contralateral forward lunge",
+        "image_url": "/media/ecl28tP.gif",
+        "target_muscles": [
+          "glutes"
+        ],
+        "sets": [
+          {
+            "id": 9030,
+            "set_index": 1,
+            "reps": 10,
+            "weight_kg": 50,
+            "weight": 50,
+            "completed": true
+          },
+          {
+            "id": 9031,
+            "set_index": 2,
+            "reps": 10,
+            "weight_kg": 50,
+            "weight": 50,
+            "completed": true
+          },
+          {
+            "id": 9032,
+            "set_index": 3,
+            "reps": 10,
+            "weight_kg": 50,
+            "weight": 50,
+            "completed": true
+          }
+        ]
+      }
+    ]
+  }
+]

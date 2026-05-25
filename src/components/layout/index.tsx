@@ -1,11 +1,13 @@
 import { NavLink, useNavigate } from 'react-router-dom';
 import { useAuth } from '../../context/AuthContext';
+import { useActiveSessionMonitor } from './hooks/useActiveSessionMonitor';
 import logoSrc from '../../assets/logo.png';
 import '../../App.css';
 import './Layout.css';
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   const { user, loading, logout } = useAuth();
+  const { activeSession } = useActiveSessionMonitor();
   const navigate = useNavigate();
 
   return (
@@ -43,17 +45,30 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 </div>
               </div>
               <div className="header-top-right">
+                {activeSession ? (
+                  <div className="header-session-wrapper">
+                    <div>
+                      <span className="header-top-session-label">Active Workout:</span>
+                      <span className="header-top-session-name">{activeSession.plan_name || 'Plan'}</span>
+                    </div>
+                    <button
+                      type="button"
+                      className="btn teal header-top-continue"
+                      onClick={() => navigate('/plans?continue=1')}
+                    >
+                      Continue
+                    </button>
+                  </div>
+                ) : (
                   <span className="note">No active Workout</span>
+                )}
               </div>
             </div>
           )}
           <nav className="nav nav-main">
             {!loading && user && (
               <>
-                <NavLink to="/stats" className={({ isActive }) => (isActive ? 'active' : undefined)}>Stats</NavLink>
                 <NavLink to="/plans" className={({ isActive }) => (isActive ? 'active' : undefined)}>Plans</NavLink>
-                <NavLink to="/history" className={({ isActive }) => (isActive ? 'active' : undefined)}>History</NavLink>
-                <NavLink to="/exercises" className={({ isActive }) => (isActive ? 'active' : undefined)}>Exercises</NavLink>
               </>
             )}
             {!loading && !user && (

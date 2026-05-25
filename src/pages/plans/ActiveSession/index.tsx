@@ -1,5 +1,5 @@
 import React from 'react';
-import type { Session, SessionExercise, ExerciseSet } from '../../../types/fitness';
+import { Session, SessionExercise, ExerciseSet } from '../../../types/fitness';
 import { ConfirmModal } from '../../../components/ui/ConfirmModal';
 import { titleCaseName } from '../../../services/api';
 import { SetRow } from './components/SessionSetRows';
@@ -65,11 +65,11 @@ export default function SessionModal({
               <button className="btn cancel" onClick={onClose}>✕</button>
             </div>
           </div>
-
+          
           <div className="row flex-wrap session-add-row">
             <button className="btn" onClick={onOpenCatalog}>+ Add Exercise</button>
           </div>
-
+          
           <div className="session-exercises-list">
             {(local.exercises || []).map((ex: SessionExercise) => (
               <div key={ex.id} className="card template-exercise-card">
@@ -89,7 +89,7 @@ export default function SessionModal({
                           const bp = Array.isArray(ex.body_parts) && ex.body_parts.length ? ex.body_parts[0] : null;
                           const muscles: string[] = Array.isArray(ex.target_muscles) ? ex.target_muscles : [];
                           if (!bp && (!muscles || muscles.length === 0)) return null;
-
+                          
                           return (
                             <>
                               {muscles.map((m: string) => (
@@ -108,7 +108,7 @@ export default function SessionModal({
                     <button className="btn btn-delete" onClick={() => removeSessExercise(ex.id)}>✕</button>
                   </div>
                 </div>
-
+                
                 <div className="template-exercise-sets-container">
                   <div className="template-exercise-set-header session-exercise-set-grid">
                     <div className="template-exercise-set-col-set">SET</div>
@@ -124,7 +124,7 @@ export default function SessionModal({
                       .slice()
                       .sort((a, b) => a.set_index - b.set_index)
                       .map((s, idx) => ({ ...s, set_index: idx + 1 }));
-
+                      
                     return existingSets.map((current: ExerciseSet) => (
                       <SetRow
                         key={current.id}
@@ -144,7 +144,7 @@ export default function SessionModal({
           </div>
         </div>
       </div>
-
+      
       {confirmDiscard && (
         <ConfirmModal
           title="Cancel Workout?"
@@ -154,7 +154,7 @@ export default function SessionModal({
           onConfirm={discardConfirmed}
         />
       )}
-
+      
       {confirmFinish && (
         <FinishConfirmModal
           defaultMinutes={Math.floor(elapsed / 60)}
