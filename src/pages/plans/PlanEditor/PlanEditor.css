@@ -1,0 +1,220 @@
+.plan-editor-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.plan-editor-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.plan-editor-title-input {
+  font-size: 24px;
+  font-weight: bold;
+  background: transparent;
+  border: none;
+  color: inherit;
+  flex: 1;
+  margin-right: 16px;
+}
+
+.plan-description-container {
+  margin-bottom: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--border);
+}
+
+.plan-description-label {
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  text-align: left;
+}
+
+.plan-description-input {
+  width: 100%;
+  min-height: 60px;
+  background: #0e131b;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 12px;
+  color: inherit;
+  resize: vertical;
+}
+
+.plan-editor-list {
+  display: grid;
+  gap: 16px;
+}
+
+.template-exercise-card {
+  background: #0e131b;
+  padding: 12px;
+}
+
+.template-exercise-card-header {
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 12px;
+}
+
+.template-exercise-card-info {
+  gap: 12px;
+}
+
+.template-exercise-card-image-box {
+  width: 60px;
+  height: 60px;
+  background: #222;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.template-exercise-card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.template-exercise-card-no-image {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  font-size: 10px;
+  color: #666;
+}
+
+.template-exercise-card-name {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.template-exercise-card-muscles {
+  font-size: 12px;
+  opacity: 0.7;
+}
+
+.template-exercise-sets-container {
+  padding-left: 0;
+  margin-top: 16px;
+}
+
+.template-exercise-set-header {
+  display: grid;
+  grid-template-columns: 60px 1fr 1fr 40px;
+  gap: 16px;
+  align-items: center;
+  font-size: 11px;
+  opacity: 0.5;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  text-align: center;
+}
+
+.template-exercise-set-col-set,
+.template-exercise-set-col-kg,
+.template-exercise-set-col-reps {
+  width: auto;
+}
+
+.set-row {
+  display: grid;
+  grid-template-columns: 60px 1fr 1fr 40px;
+  gap: 16px;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.set-index-col {
+  opacity: 0.5;
+  font-size: 12px;
+  text-align: center;
+}
+
+.set-input-col {
+  width: 100%;
+}
+
+.set-input {
+  width: 100%;
+  padding: 6px 10px;
+  background: #1a1f26;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  color: inherit;
+  font-size: 14px;
+  text-align: center;
+}
+
+.btn-remove-set {
+  background: none;
+  border: none;
+  color: var(--muted);
+  cursor: pointer;
+  padding: 4px;
+  font-size: 14px;
+  line-height: 1;
+  transition: color 0.2s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-remove-set:hover {
+  color: #ff5f5f;
+}
+
+.exercise-badge {
+  display: inline-flex;
+  padding: 4px 12px;
+  border-radius: 999px;
+  background: rgba(100, 149, 237, 0.15);
+  border: 1px solid var(--border);
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.template-exercise-card-muscles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 6px;
+}
+
+.btn-delete {
+  background: transparent;
+  border: 1px solid rgba(255, 95, 95, 0.4);
+  color: #ff5f5f;
+  padding: 4px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-delete:hover {
+  background: rgba(255, 95, 95, 0.1);
+  border-color: #ff5f5f;
+}
+
+.add-set-btn {
+  margin-top: 8px;
+  font-size: 12px;
+  padding: 4px 12px;
+}
+
+.add-exercise-container {
+  margin-top: 24px;
+  display: flex;
+  justify-content: center;
+}
+
+.add-exercise-btn {
+  padding: 12px 24px;
+  font-size: 16px;
+}
+

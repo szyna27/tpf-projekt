@@ -1,0 +1,114 @@
+.ue-header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ue-title {
+  margin: 0;
+}
+
+.ue-header-actions {
+  display: flex;
+  gap: 12px;
+}
+
+.btn-add-exercise {
+  background-color: #5b2aa6; /* Primary brand purple */
+  color: white;
+  border: none;
+  font-weight: 600;
+}
+
+.btn-add-exercise:hover {
+  background-color: #4a218a;
+  opacity: 1;
+}
+
+.ue-error-msg {
+  color: #d55;
+}
+
+.ue-table-wrap {
+  margin-top: 12px;
+}
+
+.ue-no-exercises {
+  padding: 12px;
+  margin: 0;
+}
+
+.ue-actions-header {
+  width: 180px;
+}
+
+.ue-image-container {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid var(--border);
+  background: var(--surface-2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ue-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.ue-image-placeholder {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  border: 2px solid var(--border);
+  background: rgba(255, 255, 255, 0.03);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  color: var(--muted);
+}
+
+.ue-name-cell {
+  font-weight: 600;
+}
+
+.ue-tags-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.ue-tag {
+  padding: 4px 12px;
+  border-radius: 999px;
+  background: var(--surface-2);
+  background-color: rgba(100, 149, 237, 0.15);
+  border: 1px solid var(--border);
+  font-size: 0.85rem;
+}
+
+.btn.delete {
+    background: transparent;
+    color: #ef4444; /* Soft red text */
+    border: 1px solid #7f1d1d; /* Dark red border */
+    box-shadow: none;
+}
+.btn.delete:hover {
+    background: rgba(239, 68, 68, 0.1); /* Faint red background on hover */
+    border-color: #b91c1c;
+    transform: translateY(-2px);
+}
+
+.ue-tag-muscle {
+  text-transform: capitalize;
+}
+
+.ue-row-actions {
+  display: flex;
+  gap: 8px;
+}
