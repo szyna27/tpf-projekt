@@ -45,7 +45,7 @@ export const AuthProvider = ({ children }: { children: React.ReactNode }) => {
 
   const loginWithGoogle = (redirectTo?: string) => {
      localStorage.setItem("isAuthenticated", "true");
-     navigate(redirectTo || "/stats");
+     navigate(redirectTo || "/plans");
   };
 
   const login = async (email: string, pass: string) => {

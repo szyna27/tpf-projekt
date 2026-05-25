@@ -10,6 +10,7 @@ import Login from './pages/auth/Login';
 import Register from './pages/auth/Register';
 import PasswordReset from './pages/auth/PasswordReset';
 import PasswordResetConfirm from './pages/auth/PasswordResetConfirm';
+import PlanTemplateEditor from './pages/plans/PlanEditor';
 
 export default function App() {
   return (
@@ -51,6 +52,14 @@ export default function App() {
           element={
             <ProtectedRoute>
               <Plans />
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/plans/:id/edit"
+          element={
+            <ProtectedRoute>
+              <PlanTemplateEditor />
             </ProtectedRoute>
           }
         />

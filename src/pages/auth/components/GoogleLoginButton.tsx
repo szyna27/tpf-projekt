@@ -6,7 +6,7 @@ interface Props {
   redirect?: string;
 }
 
-export function GoogleLoginButton({ redirect = '/stats' }: Props) {
+export function GoogleLoginButton({ redirect = '/plans' }: Props) {
   const { loginWithGoogle } = useAuth();
   
   return (

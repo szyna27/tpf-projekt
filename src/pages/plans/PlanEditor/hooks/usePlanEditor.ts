@@ -1,11 +1,11 @@
 import { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import {
-  getTrainingPlan, getExerciseCatalog,
+import { 
+  getTrainingPlan, getExerciseCatalog, 
   deleteExercise, updateExercise, addPlanSet, deletePlanSet,
   updateTrainingPlan, addExercise
 } from '../../../../services/api';
-import type { CatalogItem, ExerciseConfig } from '../../../../components/exercises/ExerciseCatalogModal';
+import { CatalogItem, ExerciseConfig } from '../../../../components/exercises/ExerciseCatalogModal';
 
 export function usePlanEditor() {
   const { id } = useParams();

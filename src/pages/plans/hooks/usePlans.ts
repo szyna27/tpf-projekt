@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
-import {
-  getTrainingPlans, deleteTrainingPlan, startSession,
-  getExerciseCatalog, getActiveSessions
+import { 
+  getTrainingPlans, deleteTrainingPlan, startSession, 
+  getExerciseCatalog, getActiveSessions 
 } from '../../../services/api';
 import { emitActiveSessionChanged } from '../../../services/events';
 import type { Plan } from '../../../types/fitness';

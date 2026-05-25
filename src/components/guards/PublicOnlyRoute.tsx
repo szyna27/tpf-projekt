@@ -5,6 +5,6 @@ import { useAuth } from '../../context/AuthContext';
 export default function PublicOnlyRoute({ children }: { children: ReactElement }) {
   const { user, loading } = useAuth();
   if (loading) return <p>Loading…</p>;
-  if (user) return <Navigate to="/stats" replace />;
+  if (user) return <Navigate to="/plans" replace />;
   return children;
 }

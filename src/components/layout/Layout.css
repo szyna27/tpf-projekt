@@ -18,16 +18,16 @@
 }
 
 .header-top-row {
-  position: relative; 
+  position: relative; /* container for absolutely positioned logo */
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 16px;
-  margin-bottom: 6px; 
+  margin-bottom: 6px; /* tighter spacing to nav */
 }
 
 .header-logo {
-  position: absolute; 
+  position: absolute; /* truly center the logo regardless of side widths */
   left: 50%;
   transform: translateX(-50%);
   display: flex;
@@ -37,7 +37,7 @@
 }
 
 .header-logo-inner {
-  max-width: 55px; 
+  max-width: 55px; /* reduced logo size */
   max-height: 55px;
 }
 
@@ -45,12 +45,13 @@
   display: block;
   width: 100%;
   height: auto;
+  /* slight adjustment to vertically center logo */
 }
 
 .header-top-left {
   display: flex;
   align-items: center;
-  flex: 1; 
+  flex: 1; /* allow left block to take available space */
   min-width: 0;
 }
 
@@ -58,7 +59,7 @@
   display: flex;
   flex-direction: row;
   line-height: 1.2;
-  align-items: center;
+  align-items: center; /* keep items aligned horizontally */
   gap: 16px;
 }
 
@@ -93,9 +94,26 @@
   display: flex;
   align-items: center;
   font-size: 0.9rem;
-  justify-content: flex-end;
-  flex: 1;
+  justify-content: flex-end; /* keep session block pinned to the right */
+  flex: 1; /* allow right area to take available space so content doesn't push the logo */
   min-width: 0;
+}
+
+.header-session-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+}
+
+.header-top-session-label {
+  margin-right: 6px;
+  color: var(--muted);
+}
+
+.header-top-session-name {
+  font-weight: 600;
+  margin-left: 6px;
 }
 
 .header-top-continue {

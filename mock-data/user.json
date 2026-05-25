@@ -1,0 +1,6 @@
+{
+  "id": 1,
+  "email": "test@test.pl",
+  "username": "Test User",
+  "is_active": true
+}

@@ -16,7 +16,7 @@ export function useLogin() {
     setError(null);
     try {
       await login(email, password);
-      navigate('/stats', { replace: true });
+      navigate('/plans', { replace: true });
     } catch (err: unknown) {
       if (err instanceof Error) {
         setError(err.message);

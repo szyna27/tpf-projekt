@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { updatePlanSet } from '../../../../services/api';
-import type { ExerciseSet } from '../../../../types/fitness';
+import { ExerciseSet } from '../../../../types/fitness';
 
 export interface PlanSetRowProps {
   planId: number;
@@ -13,14 +13,14 @@ export interface PlanSetRowProps {
 export function PlanSetRow({ planId, exId, setObj, onChange, onRemove }: PlanSetRowProps) {
   const [w, setW] = useState<string>('');
   const [r, setR] = useState<string>('');
-
+  
   useEffect(() => {
     const weight = setObj.weight_kg;
     const reps = setObj.reps;
     // Check for non-zero values to populate the inputs
     const hasWeight = weight && weight > 0;
     const hasReps = reps && reps > 0;
-
+    
     setW(hasWeight ? String(weight) : '');
     setR(hasReps ? String(reps) : '');
   }, [setObj.id, setObj.weight_kg, setObj.reps]);
@@ -34,7 +34,7 @@ export function PlanSetRow({ planId, exId, setObj, onChange, onRemove }: PlanSet
     });
       onChange(res as ExerciseSet);
   }
-
+  
   return (
     <div className="set-row">
       <div className="set-index-col">#{setObj.set_index}</div>

@@ -1,0 +1,311 @@
+[
+  {
+    "id": 1,
+    "name": "Plan FBW A",
+    "description": "Caly trening FBW",
+    "exercises": [
+      {
+        "id": 101,
+        "exercise_id": 1,
+        "name": "Band shrug",
+        "image_url": "/media/trmte8s.gif",
+        "target_muscles": [
+          "traps"
+        ],
+        "sets_detail": [
+          {
+            "id": 1010,
+            "set_index": 1,
+            "reps": 10,
+            "weight_kg": 50,
+            "weight": 50
+          },
+          {
+            "id": 1011,
+            "set_index": 2,
+            "reps": 10,
+            "weight_kg": 50,
+            "weight": 50
+          },
+          {
+            "id": 1012,
+            "set_index": 3,
+            "reps": 10,
+            "weight_kg": 50,
+            "weight": 50
+          }
+        ]
+      },
+      {
+        "id": 102,
+        "exercise_id": 2,
+        "name": "Barbell decline close grip to skull press",
+        "image_url": "/media/LMGXZn8.gif",
+        "target_muscles": [
+          "triceps"
+        ],
+        "sets_detail": [
+          {
+            "id": 1020,
+            "set_index": 1,
+            "reps": 10,
+            "weight_kg": 50,
+            "weight": 50
+          },
+          {
+            "id": 1021,
+            "set_index": 2,
+            "reps": 10,
+            "weight_kg": 50,
+            "weight": 50
+          },
+          {
+            "id": 1022,
+            "set_index": 3,
+            "reps": 10,
+            "weight_kg": 50,
+            "weight": 50
+          }
+        ]
+      },
+      {
+        "id": 103,
+        "exercise_id": 3,
+        "name": "Push-up inside leg kick",
+        "image_url": "/media/0br45wL.gif",
+        "target_muscles": [
+          "glutes"
+        ],
+        "sets_detail": [
+          {
+            "id": 1030,
+            "set_index": 1,
+            "reps": 10,
+            "weight_kg": 50,
+            "weight": 50
+          },
+          {
+            "id": 1031,
+            "set_index": 2,
+            "reps": 10,
+            "weight_kg": 50,
+            "weight": 50
+          },
+          {
+            "id": 1032,
+            "set_index": 3,
+            "reps": 10,
+            "weight_kg": 50,
+            "weight": 50
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Plan FBW B",
+    "description": "Inne cwiczenia FBW",
+    "exercises": [
+      {
+        "id": 104,
+        "exercise_id": 4,
+        "name": "Cable incline fly (on stability ball)",
+        "image_url": "/media/27NNGFr.gif",
+        "target_muscles": [
+          "chest"
+        ],
+        "sets_detail": [
+          {
+            "id": 1040,
+            "set_index": 1,
+            "reps": 10,
+            "weight_kg": 50,
+            "weight": 50
+          },
+          {
+            "id": 1041,
+            "set_index": 2,
+            "reps": 10,
+            "weight_kg": 50,
+            "weight": 50
+          },
+          {
+            "id": 1042,
+            "set_index": 3,
+            "reps": 10,
+            "weight_kg": 50,
+            "weight": 50
+          }
+        ]
+      },
+      {
+        "id": 105,
+        "exercise_id": 5,
+        "name": "Kettlebell double alternating hang clean",
+        "image_url": "/media/a4F9Oyc.gif",
+        "target_muscles": [
+          "biceps"
+        ],
+        "sets_detail": [
+          {
+            "id": 1050,
+            "set_index": 1,
+            "reps": 10,
+            "weight_kg": 50,
+            "weight": 50
+          },
+          {
+            "id": 1051,
+            "set_index": 2,
+            "reps": 10,
+            "weight_kg": 50,
+            "weight": 50
+          },
+          {
+            "id": 1052,
+            "set_index": 3,
+            "reps": 10,
+            "weight_kg": 50,
+            "weight": 50
+          }
+        ]
+      },
+      {
+        "id": 106,
+        "exercise_id": 6,
+        "name": "Dumbbell contralateral forward lunge",
+        "image_url": "/media/ecl28tP.gif",
+        "target_muscles": [
+          "glutes"
+        ],
+        "sets_detail": [
+          {
+            "id": 1060,
+            "set_index": 1,
+            "reps": 10,
+            "weight_kg": 50,
+            "weight": 50
+          },
+          {
+            "id": 1061,
+            "set_index": 2,
+            "reps": 10,
+            "weight_kg": 50,
+            "weight": 50
+          },
+          {
+            "id": 1062,
+            "set_index": 3,
+            "reps": 10,
+            "weight_kg": 50,
+            "weight": 50
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Upper Body",
+    "description": "Gorne partie",
+    "exercises": [
+      {
+        "id": 107,
+        "exercise_id": 7,
+        "name": "Barbell press sit-up",
+        "image_url": "/media/wnEscH8.gif",
+        "target_muscles": [
+          "abs"
+        ],
+        "sets_detail": [
+          {
+            "id": 1070,
+            "set_index": 1,
+            "reps": 10,
+            "weight_kg": 50,
+            "weight": 50
+          },
+          {
+            "id": 1071,
+            "set_index": 2,
+            "reps": 10,
+            "weight_kg": 50,
+            "weight": 50
+          },
+          {
+            "id": 1072,
+            "set_index": 3,
+            "reps": 10,
+            "weight_kg": 50,
+            "weight": 50
+          }
+        ]
+      },
+      {
+        "id": 108,
+        "exercise_id": 8,
+        "name": "Cable reverse one arm curl",
+        "image_url": "/media/gVlnLIJ.gif",
+        "target_muscles": [
+          "biceps"
+        ],
+        "sets_detail": [
+          {
+            "id": 1080,
+            "set_index": 1,
+            "reps": 10,
+            "weight_kg": 50,
+            "weight": 50
+          },
+          {
+            "id": 1081,
+            "set_index": 2,
+            "reps": 10,
+            "weight_kg": 50,
+            "weight": 50
+          },
+          {
+            "id": 1082,
+            "set_index": 3,
+            "reps": 10,
+            "weight_kg": 50,
+            "weight": 50
+          }
+        ]
+      },
+      {
+        "id": 109,
+        "exercise_id": 9,
+        "name": "Dumbbell finger curls",
+        "image_url": "/media/mtXengz.gif",
+        "target_muscles": [
+          "forearms"
+        ],
+        "sets_detail": [
+          {
+            "id": 1090,
+            "set_index": 1,
+            "reps": 10,
+            "weight_kg": 50,
+            "weight": 50
+          },
+          {
+            "id": 1091,
+            "set_index": 2,
+            "reps": 10,
+            "weight_kg": 50,
+            "weight": 50
+          },
+          {
+            "id": 1092,
+            "set_index": 3,
+            "reps": 10,
+            "weight_kg": 50,
+            "weight": 50
+          }
+        ]
+      }
+    ]
+  }
+]
