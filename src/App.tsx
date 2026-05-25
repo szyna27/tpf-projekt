@@ -11,6 +11,7 @@ import Register from './pages/auth/Register';
 import PasswordReset from './pages/auth/PasswordReset';
 import PasswordResetConfirm from './pages/auth/PasswordResetConfirm';
 import PlanTemplateEditor from './pages/plans/PlanEditor';
+import UserExercises from './pages/userExercises';
 
 export default function App() {
   return (
@@ -60,6 +61,14 @@ export default function App() {
           element={
             <ProtectedRoute>
               <PlanTemplateEditor />
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/exercises"
+          element={
+            <ProtectedRoute>
+              <UserExercises />
             </ProtectedRoute>
           }
         />
