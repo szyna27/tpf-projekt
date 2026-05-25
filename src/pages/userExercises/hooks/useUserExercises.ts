@@ -7,7 +7,7 @@ export function useUserExercises() {
   const [items, setItems] = useState<UserExercise[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
-  const [attrs, setAttrs] = useState<ExerciseAttributes>({ equipments: [], targetMuscles: [] });
+  const [attrs, setAttrs] = useState<ExerciseAttributes>({ equipments: [], target_muscles: [] });
   const [query, setQuery] = useState('');
   
   const debouncedQuery = useDebounce(query, 250);
@@ -58,7 +58,7 @@ export function useUserExercises() {
   }
 
   const onUpdated = (upd: UserExercise) => {
-    setItems(prev => prev.map(x => x.id === upd.id ? upd : x));
+    setItems(prev => prev.map(x => x.id === upd.id ? { ...x, ...upd } : x));
   };
 
   const onDeletedItem = (id: number) => {

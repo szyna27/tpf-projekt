@@ -1,6 +1,6 @@
 export interface ExerciseMetadata {
   equipments?: string[];
-  targetMuscles?: string[];
+  target_muscles?: string[];
   image_url?: string;
   [key: string]: unknown;
 }
@@ -17,5 +17,5 @@ export interface UserExercise {
 
 export interface ExerciseAttributes {
   equipments: string[];
-  targetMuscles: string[];
+  target_muscles: string[];
 }

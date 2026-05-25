@@ -15,7 +15,7 @@ export interface ExerciseConfig {
 
 export interface ExerciseAttributes {
   equipments: string[];
-  targetMuscles: string[];
+  target_muscles: string[];
 }
 
 export interface CreatedExercise {
@@ -31,7 +31,7 @@ export interface ImageUploadResult {
 
 export interface CustomExercisePayload {
   name: string;
-  equipments?: string[];
-  targetMuscles?: string[];
+  equipment?: string;
+  target_muscles?: string[];
   image_url?: string;
 }

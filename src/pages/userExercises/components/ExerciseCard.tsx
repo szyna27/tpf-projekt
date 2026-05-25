@@ -11,8 +11,8 @@ export default function ExerciseCard({ item, onEdit, onDelete }: ExerciseCardPro
     ? item.metadata.equipments 
     : (item.equipment ? [item.equipment] : []);
     
-  const muscles: string[] = Array.isArray(item.metadata?.targetMuscles) 
-    ? item.metadata.targetMuscles 
+  const muscles: string[] = Array.isArray(item.metadata?.target_muscles) 
+    ? item.metadata.target_muscles 
     : (item.target_muscles || (item.body_part ? [item.body_part] : []));
     
   const imageUrl: string | undefined = item.image_url || item.metadata?.image_url;

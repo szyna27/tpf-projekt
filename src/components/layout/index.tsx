@@ -69,6 +69,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             {!loading && user && (
               <>
                 <NavLink to="/plans" className={({ isActive }) => (isActive ? 'active' : undefined)}>Plans</NavLink>
+                <NavLink to="/exercises" className={({ isActive }) => (isActive ? 'active' : undefined)}>Exercises</NavLink>
               </>
             )}
             {!loading && !user && (
