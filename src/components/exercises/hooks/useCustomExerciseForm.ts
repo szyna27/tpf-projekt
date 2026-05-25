@@ -84,11 +84,11 @@ export function useCustomExerciseForm({ onClose, onCreated }: UseCustomExerciseF
       };
 
       if (equipment) {
-        payload.equipments = [equipment];
+        payload.equipment = equipment;
       }
 
       if (primary) {
-        payload.targetMuscles = [primary];
+        payload.target_muscles = [primary];
       }
 
       if (imageUrl) {

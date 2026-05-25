@@ -58,7 +58,7 @@ export function useUserExercises() {
   }
 
   const onUpdated = (upd: UserExercise) => {
-    setItems(prev => prev.map(x => x.id === upd.id ? upd : x));
+    setItems(prev => prev.map(x => x.id === upd.id ? { ...x, ...upd } : x));
   };
 
   const onDeletedItem = (id: number) => {

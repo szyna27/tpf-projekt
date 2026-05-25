@@ -31,7 +31,7 @@ export interface ImageUploadResult {
 
 export interface CustomExercisePayload {
   name: string;
-  equipments?: string[];
-  targetMuscles?: string[];
+  equipment?: string;
+  target_muscles?: string[];
   image_url?: string;
 }

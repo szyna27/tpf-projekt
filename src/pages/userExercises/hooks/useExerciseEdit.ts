@@ -10,8 +10,8 @@ export interface UseExerciseEditOptions {
 
 export function useExerciseEdit({ exercise, onUpdated, onDeleted }: UseExerciseEditOptions) {
   const [name, setName] = useState(exercise.name);
-  const [equipment, setEquipment] = useState(exercise.metadata?.equipments?.[0] ?? '');
-  const [primary, setPrimary] = useState(exercise.metadata?.targetMuscles?.[0] ?? '');
+  const [equipment, setEquipment] = useState(exercise.equipment ?? exercise.metadata?.equipments?.[0] ?? '');
+  const [primary, setPrimary] = useState(exercise.target_muscles?.[0] ?? exercise.metadata?.targetMuscles?.[0] ?? '');
   const [saving, setSaving] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [imageUploading, setImageUploading] = useState(false);
@@ -21,8 +21,8 @@ export function useExerciseEdit({ exercise, onUpdated, onDeleted }: UseExerciseE
 
   useEffect(() => {
     setName(exercise.name);
-    setEquipment(exercise.metadata?.equipments?.[0] ?? '');
-    setPrimary(exercise.metadata?.targetMuscles?.[0] ?? '');
+    setEquipment(exercise.equipment ?? exercise.metadata?.equipments?.[0] ?? '');
+    setPrimary(exercise.target_muscles?.[0] ?? exercise.metadata?.targetMuscles?.[0] ?? '');
     setImageUrl(exercise.image_url || exercise.metadata?.image_url || '');
     setImageFile(null);
     setSaving(false);
@@ -64,18 +64,15 @@ export function useExerciseEdit({ exercise, onUpdated, onDeleted }: UseExerciseE
     try {
       const payload: {
         name: string;
-        equipments: string[];
-        targetMuscles: string[];
-        image_url?: string;
+        equipment: string | null;
+        target_muscles: string[];
+        image_url: string | null;
       } = {
         name: trimmedName,
-        equipments: equipment ? [equipment] : [],
-        targetMuscles: primary ? [primary] : []
+        equipment: equipment || null,
+        target_muscles: primary ? [primary] : [],
+        image_url: imageUrl || null
       };
-
-      if (imageUrl) {
-        payload.image_url = imageUrl;
-      }
 
       const updatedExercise = await updateUserExercise(exercise.id, payload);
       onUpdated(updatedExercise as UserExercise);

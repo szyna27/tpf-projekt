@@ -32,13 +32,15 @@ export async function createUserExerciseAdvanced(data: any) {
 }
 export async function updateUserExercise(id: number, data: any) { 
   try {
-    await fetch(`${API_BASE}/user-exercises/${id}`, {
-      method: 'PUT',
+    const res = await fetch(`${API_BASE}/user-exercises/${id}`, {
+      method: 'PATCH',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(data)
     });
+    const result = await res.json();
+    return result;
   } catch {}
-  return data; 
+  return { ...data, id }; 
 }
 export async function deleteUserExercise(id: number) { 
   try {
