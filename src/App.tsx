@@ -14,6 +14,8 @@ import PlanTemplateEditor from './pages/plans/PlanEditor';
 import UserExercises from './pages/userExercises';
 import History from './pages/history/index';
 import HistoryDetail from './pages/history/WorkoutDetail';
+import Statistics from './pages/statistics';
+import StatisticsExercise from './pages/statistics/ExerciseDetail';
 
 export default function App() {
   return (
@@ -87,6 +89,22 @@ export default function App() {
           element={
             <ProtectedRoute>
               <HistoryDetail />
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/stats"
+          element={
+            <ProtectedRoute>
+              <Statistics />
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/stats/:name"
+          element={
+            <ProtectedRoute>
+              <StatisticsExercise />
             </ProtectedRoute>
           }
         />

@@ -1,0 +1,40 @@
+{
+  "workouts_completed": 15,
+  "total_volume": 150000,
+  "daily_volume": [
+    {
+      "date": "2026-04-25",
+      "volume": 4500
+    },
+    {
+      "date": "2026-04-27",
+      "volume": 5200
+    },
+    {
+      "date": "2026-04-30",
+      "volume": 4100
+    },
+    {
+      "date": "2026-05-01",
+      "volume": 6500
+    }
+  ],
+  "per_muscle": [
+    {
+      "muscle": "Chest",
+      "value": 35
+    },
+    {
+      "muscle": "Back",
+      "value": 30
+    },
+    {
+      "muscle": "Legs",
+      "value": 25
+    },
+    {
+      "muscle": "Shoulders",
+      "value": 10
+    }
+  ]
+}
