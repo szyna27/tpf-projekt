@@ -1,0 +1,597 @@
+[
+  {
+    "id": 1,
+    "plan_id": 1,
+    "plan_name": "Plan FBW A",
+    "started_at": "2026-05-02T12:25:35.343Z",
+    "finished_at": "2026-05-02T13:35:35.343Z",
+    "duration_seconds": 4200,
+    "total_volume": 4650,
+    "exercises": [
+      {
+        "id": 101,
+        "exercise_id": 1,
+        "exercise_name": "Band shrug",
+        "name": "Band shrug",
+        "image_url": "/media/trmte8s.gif",
+        "target_muscles": [
+          "traps"
+        ],
+        "sets": [
+          {
+            "id": 1010,
+            "set_index": 1,
+            "reps": 10,
+            "weight_kg": 50,
+            "weight": 50,
+            "completed": true
+          },
+          {
+            "id": 1011,
+            "set_index": 2,
+            "reps": 10,
+            "weight_kg": 50,
+            "weight": 50,
+            "completed": true
+          },
+          {
+            "id": 1012,
+            "set_index": 3,
+            "reps": 10,
+            "weight_kg": 50,
+            "weight": 50,
+            "completed": true
+          }
+        ]
+      },
+      {
+        "id": 102,
+        "exercise_id": 2,
+        "exercise_name": "Barbell decline close grip to skull press",
+        "name": "Barbell decline close grip to skull press",
+        "image_url": "/media/LMGXZn8.gif",
+        "target_muscles": [
+          "triceps"
+        ],
+        "sets": [
+          {
+            "id": 1020,
+            "set_index": 1,
+            "reps": 10,
+            "weight_kg": 100,
+            "weight": 100,
+            "completed": true
+          },
+          {
+            "id": 1021,
+            "set_index": 2,
+            "reps": 10,
+            "weight_kg": 100,
+            "weight": 100,
+            "completed": true
+          },
+          {
+            "id": 1022,
+            "set_index": 3,
+            "reps": 10,
+            "weight_kg": 100,
+            "weight": 100,
+            "completed": true
+          }
+        ]
+      },
+      {
+        "id": 103,
+        "exercise_id": 3,
+        "exercise_name": "Push-up inside leg kick",
+        "name": "Push-up inside leg kick",
+        "image_url": "/media/0br45wL.gif",
+        "target_muscles": [
+          "glutes"
+        ],
+        "sets": [
+          {
+            "id": 1030,
+            "set_index": 1,
+            "reps": 10,
+            "weight_kg": 50,
+            "weight": 50,
+            "completed": true
+          },
+          {
+            "id": 1031,
+            "set_index": 2,
+            "reps": 10,
+            "weight_kg": 50,
+            "weight": 50,
+            "completed": true
+          },
+          {
+            "id": 1032,
+            "set_index": 3,
+            "reps": 10,
+            "weight_kg": 50,
+            "weight": 50,
+            "completed": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "plan_id": 2,
+    "plan_name": "Plan FBW B",
+    "started_at": "2026-05-01T12:25:35.343Z",
+    "finished_at": "2026-05-01T13:45:35.343Z",
+    "duration_seconds": 4800,
+    "total_volume": 4800,
+    "exercises": [
+      {
+        "id": 201,
+        "exercise_id": 4,
+        "exercise_name": "Cable incline fly (on stability ball)",
+        "name": "Cable incline fly (on stability ball)",
+        "image_url": "/media/27NNGFr.gif",
+        "target_muscles": [
+          "chest"
+        ],
+        "sets": [
+          {
+            "id": 2010,
+            "set_index": 1,
+            "reps": 10,
+            "weight_kg": 50,
+            "weight": 50,
+            "completed": true
+          },
+          {
+            "id": 2011,
+            "set_index": 2,
+            "reps": 10,
+            "weight_kg": 50,
+            "weight": 50,
+            "completed": true
+          },
+          {
+            "id": 2012,
+            "set_index": 3,
+            "reps": 10,
+            "weight_kg": 50,
+            "weight": 50,
+            "completed": true
+          }
+        ]
+      },
+      {
+        "id": 202,
+        "exercise_id": 5,
+        "exercise_name": "Kettlebell double alternating hang clean",
+        "name": "Kettlebell double alternating hang clean",
+        "image_url": "/media/a4F9Oyc.gif",
+        "target_muscles": [
+          "biceps"
+        ],
+        "sets": [
+          {
+            "id": 2020,
+            "set_index": 1,
+            "reps": 10,
+            "weight_kg": 50,
+            "weight": 50,
+            "completed": true
+          },
+          {
+            "id": 2021,
+            "set_index": 2,
+            "reps": 10,
+            "weight_kg": 50,
+            "weight": 50,
+            "completed": true
+          },
+          {
+            "id": 2022,
+            "set_index": 3,
+            "reps": 10,
+            "weight_kg": 50,
+            "weight": 50,
+            "completed": true
+          }
+        ]
+      },
+      {
+        "id": 203,
+        "exercise_id": 6,
+        "exercise_name": "Dumbbell contralateral forward lunge",
+        "name": "Dumbbell contralateral forward lunge",
+        "image_url": "/media/ecl28tP.gif",
+        "target_muscles": [
+          "glutes"
+        ],
+        "sets": [
+          {
+            "id": 2030,
+            "set_index": 1,
+            "reps": 10,
+            "weight_kg": 50,
+            "weight": 50,
+            "completed": true
+          },
+          {
+            "id": 2031,
+            "set_index": 2,
+            "reps": 10,
+            "weight_kg": 50,
+            "weight": 50,
+            "completed": true
+          },
+          {
+            "id": 2032,
+            "set_index": 3,
+            "reps": 10,
+            "weight_kg": 50,
+            "weight": 50,
+            "completed": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "plan_id": 3,
+    "plan_name": "Upper Body",
+    "started_at": "2026-04-30T12:25:35.343Z",
+    "finished_at": "2026-04-30T13:55:35.343Z",
+    "duration_seconds": 5400,
+    "total_volume": 4950,
+    "exercises": [
+      {
+        "id": 301,
+        "exercise_id": 7,
+        "exercise_name": "Barbell press sit-up",
+        "name": "Barbell press sit-up",
+        "image_url": "/media/wnEscH8.gif",
+        "target_muscles": [
+          "abs"
+        ],
+        "sets": [
+          {
+            "id": 3010,
+            "set_index": 1,
+            "reps": 10,
+            "weight_kg": 50,
+            "weight": 50,
+            "completed": true
+          },
+          {
+            "id": 3011,
+            "set_index": 2,
+            "reps": 10,
+            "weight_kg": 50,
+            "weight": 50,
+            "completed": true
+          },
+          {
+            "id": 3012,
+            "set_index": 3,
+            "reps": 10,
+            "weight_kg": 50,
+            "weight": 50,
+            "completed": true
+          }
+        ]
+      },
+      {
+        "id": 302,
+        "exercise_id": 8,
+        "exercise_name": "Cable reverse one arm curl",
+        "name": "Cable reverse one arm curl",
+        "image_url": "/media/gVlnLIJ.gif",
+        "target_muscles": [
+          "biceps"
+        ],
+        "sets": [
+          {
+            "id": 3020,
+            "set_index": 1,
+            "reps": 10,
+            "weight_kg": 50,
+            "weight": 50,
+            "completed": true
+          },
+          {
+            "id": 3021,
+            "set_index": 2,
+            "reps": 10,
+            "weight_kg": 50,
+            "weight": 50,
+            "completed": true
+          },
+          {
+            "id": 3022,
+            "set_index": 3,
+            "reps": 10,
+            "weight_kg": 50,
+            "weight": 50,
+            "completed": true
+          }
+        ]
+      },
+      {
+        "id": 303,
+        "exercise_id": 9,
+        "exercise_name": "Dumbbell finger curls",
+        "name": "Dumbbell finger curls",
+        "image_url": "/media/mtXengz.gif",
+        "target_muscles": [
+          "forearms"
+        ],
+        "sets": [
+          {
+            "id": 3030,
+            "set_index": 1,
+            "reps": 10,
+            "weight_kg": 50,
+            "weight": 50,
+            "completed": true
+          },
+          {
+            "id": 3031,
+            "set_index": 2,
+            "reps": 10,
+            "weight_kg": 50,
+            "weight": 50,
+            "completed": true
+          },
+          {
+            "id": 3032,
+            "set_index": 3,
+            "reps": 10,
+            "weight_kg": 50,
+            "weight": 50,
+            "completed": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "plan_id": 1,
+    "plan_name": "Plan FBW A",
+    "started_at": "2026-04-29T12:25:35.343Z",
+    "finished_at": "2026-04-29T14:05:35.343Z",
+    "duration_seconds": 6000,
+    "total_volume": 5100,
+    "exercises": [
+      {
+        "id": 401,
+        "exercise_id": 1,
+        "exercise_name": "Band shrug",
+        "name": "Band shrug",
+        "image_url": "/media/trmte8s.gif",
+        "target_muscles": [
+          "traps"
+        ],
+        "sets": [
+          {
+            "id": 4010,
+            "set_index": 1,
+            "reps": 10,
+            "weight_kg": 50,
+            "weight": 50,
+            "completed": true
+          },
+          {
+            "id": 4011,
+            "set_index": 2,
+            "reps": 10,
+            "weight_kg": 50,
+            "weight": 50,
+            "completed": true
+          },
+          {
+            "id": 4012,
+            "set_index": 3,
+            "reps": 10,
+            "weight_kg": 50,
+            "weight": 50,
+            "completed": true
+          }
+        ]
+      },
+      {
+        "id": 402,
+        "exercise_id": 2,
+        "exercise_name": "Barbell decline close grip to skull press",
+        "name": "Barbell decline close grip to skull press",
+        "image_url": "/media/LMGXZn8.gif",
+        "target_muscles": [
+          "triceps"
+        ],
+        "sets": [
+          {
+            "id": 4020,
+            "set_index": 1,
+            "reps": 10,
+            "weight_kg": 50,
+            "weight": 50,
+            "completed": true
+          },
+          {
+            "id": 4021,
+            "set_index": 2,
+            "reps": 10,
+            "weight_kg": 50,
+            "weight": 50,
+            "completed": true
+          },
+          {
+            "id": 4022,
+            "set_index": 3,
+            "reps": 10,
+            "weight_kg": 50,
+            "weight": 50,
+            "completed": true
+          }
+        ]
+      },
+      {
+        "id": 403,
+        "exercise_id": 3,
+        "exercise_name": "Push-up inside leg kick",
+        "name": "Push-up inside leg kick",
+        "image_url": "/media/0br45wL.gif",
+        "target_muscles": [
+          "glutes"
+        ],
+        "sets": [
+          {
+            "id": 4030,
+            "set_index": 1,
+            "reps": 10,
+            "weight_kg": 50,
+            "weight": 50,
+            "completed": true
+          },
+          {
+            "id": 4031,
+            "set_index": 2,
+            "reps": 10,
+            "weight_kg": 50,
+            "weight": 50,
+            "completed": true
+          },
+          {
+            "id": 4032,
+            "set_index": 3,
+            "reps": 10,
+            "weight_kg": 50,
+            "weight": 50,
+            "completed": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "plan_id": 2,
+    "plan_name": "Plan FBW B",
+    "started_at": "2026-04-28T12:25:35.343Z",
+    "finished_at": "2026-04-28T14:15:35.343Z",
+    "duration_seconds": 6600,
+    "total_volume": 5250,
+    "exercises": [
+      {
+        "id": 501,
+        "exercise_id": 4,
+        "exercise_name": "Cable incline fly (on stability ball)",
+        "name": "Cable incline fly (on stability ball)",
+        "image_url": "/media/27NNGFr.gif",
+        "target_muscles": [
+          "chest"
+        ],
+        "sets": [
+          {
+            "id": 5010,
+            "set_index": 1,
+            "reps": 10,
+            "weight_kg": 50,
+            "weight": 50,
+            "completed": true
+          },
+          {
+            "id": 5011,
+            "set_index": 2,
+            "reps": 10,
+            "weight_kg": 50,
+            "weight": 50,
+            "completed": true
+          },
+          {
+            "id": 5012,
+            "set_index": 3,
+            "reps": 10,
+            "weight_kg": 50,
+            "weight": 50,
+            "completed": true
+          }
+        ]
+      },
+      {
+        "id": 502,
+        "exercise_id": 5,
+        "exercise_name": "Kettlebell double alternating hang clean",
+        "name": "Kettlebell double alternating hang clean",
+        "image_url": "/media/a4F9Oyc.gif",
+        "target_muscles": [
+          "biceps"
+        ],
+        "sets": [
+          {
+            "id": 5020,
+            "set_index": 1,
+            "reps": 10,
+            "weight_kg": 50,
+            "weight": 50,
+            "completed": true
+          },
+          {
+            "id": 5021,
+            "set_index": 2,
+            "reps": 10,
+            "weight_kg": 50,
+            "weight": 50,
+            "completed": true
+          },
+          {
+            "id": 5022,
+            "set_index": 3,
+            "reps": 10,
+            "weight_kg": 50,
+            "weight": 50,
+            "completed": true
+          }
+        ]
+      },
+      {
+        "id": 503,
+        "exercise_id": 6,
+        "exercise_name": "Dumbbell contralateral forward lunge",
+        "name": "Dumbbell contralateral forward lunge",
+        "image_url": "/media/ecl28tP.gif",
+        "target_muscles": [
+          "glutes"
+        ],
+        "sets": [
+          {
+            "id": 5030,
+            "set_index": 1,
+            "reps": 10,
+            "weight_kg": 50,
+            "weight": 50,
+            "completed": true
+          },
+          {
+            "id": 5031,
+            "set_index": 2,
+            "reps": 10,
+            "weight_kg": 50,
+            "weight": 50,
+            "completed": true
+          },
+          {
+            "id": 5032,
+            "set_index": 3,
+            "reps": 10,
+            "weight_kg": 50,
+            "weight": 50,
+            "completed": true
+          }
+        ]
+      }
+    ]
+  }
+]

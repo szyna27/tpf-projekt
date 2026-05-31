@@ -1,0 +1,53 @@
+.history-title {
+  margin-top: 0;
+}
+.history-list {
+  display: grid;
+  gap: 12px;
+}
+.workout-card {
+  padding: 12px;
+}
+.workout-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.workout-card-title-group {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.workout-card-plan-name {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+.workout-card-date {
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+.workout-card-actions {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+.workout-preview-tags {
+  margin-top: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.workout-preview-tag {
+  padding: 4px 12px;
+  border-radius: 999px;
+  background: var(--surface-2);
+  background-color: rgba(100, 149, 237, 0.15);
+  border: 1px solid var(--border);
+  font-size: 0.85rem;
+}
+.workout-preview-more {
+  align-self: center;
+}
+.workout-no-exercises {
+  margin-top: 8px;
+}

@@ -12,6 +12,8 @@ import PasswordReset from './pages/auth/PasswordReset';
 import PasswordResetConfirm from './pages/auth/PasswordResetConfirm';
 import PlanTemplateEditor from './pages/plans/PlanEditor';
 import UserExercises from './pages/userExercises';
+import History from './pages/history/index';
+import HistoryDetail from './pages/history/WorkoutDetail';
 
 export default function App() {
   return (
@@ -69,6 +71,22 @@ export default function App() {
           element={
             <ProtectedRoute>
               <UserExercises />
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/history"
+          element={
+            <ProtectedRoute>
+              <History />
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/history/:id"
+          element={
+            <ProtectedRoute>
+              <HistoryDetail />
             </ProtectedRoute>
           }
         />
