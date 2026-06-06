@@ -14,22 +14,12 @@
   max-width: 1440px;
   margin: 0 auto;
   display: flex;
-  flex-direction: column;
-}
-
-.header-top-row {
-  position: relative; /* container for absolutely positioned logo */
-  display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  gap: 16px;
-  margin-bottom: 6px; /* tighter spacing to nav */
 }
 
 .header-logo {
-  position: absolute; /* truly center the logo regardless of side widths */
-  left: 50%;
-  transform: translateX(-50%);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -37,7 +27,7 @@
 }
 
 .header-logo-inner {
-  max-width: 55px; /* reduced logo size */
+  max-width: 55px;
   max-height: 55px;
 }
 
@@ -45,21 +35,19 @@
   display: block;
   width: 100%;
   height: auto;
-  /* slight adjustment to vertically center logo */
 }
 
 .header-top-left {
   display: flex;
   align-items: center;
-  flex: 1; /* allow left block to take available space */
-  min-width: 0;
+  gap: 24px;
 }
 
 .header-top-text {
   display: flex;
   flex-direction: row;
   line-height: 1.2;
-  align-items: center; /* keep items aligned horizontally */
+  align-items: center;
   gap: 16px;
 }
 
@@ -93,10 +81,9 @@
 .header-top-right {
   display: flex;
   align-items: center;
+  gap: 24px;
   font-size: 0.9rem;
-  justify-content: flex-end; /* keep session block pinned to the right */
-  flex: 1; /* allow right area to take available space so content doesn't push the logo */
-  min-width: 0;
+  justify-content: flex-end;
 }
 
 .header-session-wrapper {
@@ -142,8 +129,3 @@
 .container { padding: 24px; max-width: 1440px; margin: 0 auto; }
 
 .footer { border-top: 1px solid var(--border); padding: 12px 20px; color: var(--muted); }
-
-.wave {
-  display: inline-block;
-  font-size: 1.5rem;
-}

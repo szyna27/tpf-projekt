@@ -1,0 +1,383 @@
+.statistics-layout {
+  display: flex;
+  gap: 20px;
+  align-items: stretch;
+  min-height: 560px;
+}
+
+.statistics-left-col {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 25%;
+}
+
+.statistics-mid-col {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.statistics-right-col {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Error text */
+.error-text {
+  color: red;
+}
+
+.error-message {
+  color: red;
+}
+
+/* Exercise Search */
+.exercise-search-card {
+  position: relative;
+}
+
+.search-input {
+  width: 100%;
+}
+
+.catalog-dropdown {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
+  right: 0;
+  z-index: 60;
+  max-height: 260px;
+  overflow-y: auto;
+  border: 1px solid var(--border);
+  padding: 0.5rem;
+  background: var(--card);
+  border-radius: 8px;
+  margin-top: 0;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+}
+
+.catalog-item {
+  cursor: pointer;
+  padding: 6px 4px;
+}
+
+.catalog-item-kind {
+  opacity: 0.65;
+}
+
+/* Top 5 Exercises */
+.top5-card {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex: 1;
+  overflow: hidden;
+}
+
+.top5-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  overflow: auto;
+  padding-right: 4px;
+}
+
+.top5-loading-grid {
+  display: grid;
+  gap: 10px;
+}
+
+.placeholder-bar {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  height: 12px;
+}
+
+.placeholder-bar.primary {
+  width: 60%;
+  margin-bottom: 8px;
+}
+
+.placeholder-bar.secondary {
+  width: 40%;
+}
+
+.top5-list {
+  display: grid;
+  gap: 8px;
+}
+
+.top5-card h3 {
+  text-align: left;
+}
+
+.top5-item {
+  cursor: pointer;
+  padding: 8px 10px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: rgba(0,0,0,0.15);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-align: left;
+  transition: background 0.15s ease, border-color 0.15s ease;
+  color: #fff;
+}
+
+.top5-item:hover {
+  background: rgba(0,0,0,0.25);
+  border-color: rgba(255,255,255,0.16);
+}
+
+.top5-item-details {
+  flex: 1;
+}
+
+.top5-item-name {
+  font-weight: 600;
+  font-size: 13px;
+  color: #fff;
+}
+
+.top5-item-stats {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 2px;
+}
+
+.top5-item-stat {
+  font-size: 11px;
+  color: var(--muted);
+}
+
+.top5-item-volume {
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.top5-rank {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: rgba(0,0,0,0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 600;
+  color: #fff;
+  flex-shrink: 0;
+}
+
+.top5-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+/* Stats Summary */
+.stats-summary-card {
+  flex: 1;
+}
+
+.stats-summary-full-width {
+  grid-column: 1 / -1;
+}
+
+.stats-summary-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 0.5rem;
+}
+
+.stats-summary-title {
+  margin: 0;
+}
+
+.stats-period-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.stats-period-text {
+  font-size: 14px;
+}
+
+.stats-period-select {
+  padding: 4px 8px;
+}
+
+/* AI Recommendations */
+.ai-recommendation-card {
+  position: relative;
+  overflow: hidden;
+  flex: 1;
+}
+
+.ai-bg-gradient {
+  position: absolute;
+  inset: 0;
+  opacity: 0.08;
+  pointer-events: none;
+  background: radial-gradient(circle at top right, var(--accent) 0, transparent 55%);
+}
+
+.ai-recommendation-wrapper {
+  position: relative;
+}
+
+.ai-recommendation-icon {
+  margin-right: 6px;
+}
+
+.ai-recommendation-content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.ai-analysis-text {
+  font-size: 14px;
+  color: var(--muted);
+  text-align: left;
+}
+
+.ai-undertrained-title {
+  font-size: 14px;
+  text-align: left;
+}
+
+.ai-balanced-msg {
+  padding: 8px 10px;
+  border-radius: 8px;
+  background: rgba(46, 204, 113, 0.12);
+  border: 1px solid rgba(46, 204, 113, 0.4);
+  font-size: 13px;
+  text-align: left;
+}
+
+.ai-muscle-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.ai-muscle-tag {
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--border);
+}
+
+.ai-muscle-tag-reps {
+  color: var(--muted);
+  margin-left: 4px;
+}
+
+.ai-suggested-title {
+  font-size: 14px;
+  margin-top: 8px;
+  text-align: left;
+}
+
+.ai-rec-list {
+  max-height: 300px;
+  overflow-y: auto;
+  padding-right: 4px;
+  scrollbar-width: thin;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.ai-rec-items-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.ai-rec-item {
+  padding: 6px 8px;
+  border-radius: 8px;
+  background: rgba(0,0,0,0.15);
+  border: 1px solid rgba(255,255,255,0.08);
+  text-align: left;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  transition: background 0.15s ease, border-color 0.15s ease;
+  color: #fff;
+}
+
+.ai-rec-item:hover {
+  background: rgba(0,0,0,0.28);
+  border-color: rgba(255,255,255,0.16);
+}
+
+.ai-rec-item-content {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.ai-rec-item-details {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.ai-rec-item-name {
+  font-size: 13px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.ai-rec-item-muscles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.ai-rec-item-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 4px;
+}
+
+.ai-rec-item-details-text {
+  font-size: 18px;
+  color: var(--muted);
+  font-weight: 300;
+  line-height: 1;
+}
+
+.ai-rec-image {
+  width: 32px;
+  height: 32px;
+  border-radius: 6px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.ai-rec-muscle {
+  font-size: 10px;
+  padding: 2px 6px;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.08);
+}
