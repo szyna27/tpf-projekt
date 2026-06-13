@@ -26,7 +26,7 @@ export function useRegister() {
     setMsg(null);
     try {
       const data = await resendActivation(email);
-      setMsg((data as any).message || 'Activation link sent.');
+      setMsg(data.message || 'Activation link sent.');
     } catch (err: unknown) {
       if (err instanceof Error) {
         setMsg(err.message);

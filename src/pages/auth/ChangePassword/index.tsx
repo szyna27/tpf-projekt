@@ -7,9 +7,7 @@ export function ChangePassword() {
   const { user } = useAuth();
   const { cp, setCp, np1, setNp1, np2, setNp2, msg, loading, onSave, sendSetupLink } = useChangePassword();
 
-  const userRecord = user as Record<string, any>;
-
-  if (userRecord && !userRecord.has_password) {
+  if (user && !user.has_password) {
     return (
       <div className="auth-grid">
         <AuthLayout width="wide">
