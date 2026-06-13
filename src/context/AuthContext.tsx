@@ -1,18 +1,21 @@
 import { createContext, useContext, useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { whoami, emailLogout, emailLogin } from "../services/api";
+import { onAuthStateChanged } from "firebase/auth";
+import { whoami, emailLogout, emailLogin, googleLogin, type AppUser } from "../services/api";
+import { firebaseAuth } from "../services/firebase";
 
-type AuthUser = { id: number; email: string; name?: string } | null;
+type AuthUser = AppUser | null;
 
 type AuthCtx = {
   user: AuthUser;
   loading: boolean;
   login: (email: string, password: string) => Promise<void>;
-  loginWithGoogle: (redirectTo?: string) => void;
+  loginWithGoogle: (redirectTo?: string) => Promise<void>;
   logout: (to?: string) => Promise<void>;
 };
 
 const AuthContext = createContext<AuthCtx | null>(null);
+// eslint-disable-next-line react-refresh/only-export-components
 export const useAuth = () => {
   const context = useContext(AuthContext);
   if (!context) {
@@ -28,7 +31,7 @@ export const AuthProvider = ({ children }: { children: React.ReactNode }) => {
 
   useEffect(() => {
     let cancelled = false;
-    (async () => {
+    const unsubscribe = onAuthStateChanged(firebaseAuth, async () => {
       try {
         const currentUser = await whoami();
         if (!cancelled) setUser(currentUser);
@@ -37,14 +40,17 @@ export const AuthProvider = ({ children }: { children: React.ReactNode }) => {
       } finally {
         if (!cancelled) setLoading(false);
       }
-    })();
+    });
+
     return () => {
       cancelled = true;
+      unsubscribe();
     };
   }, []);
 
-  const loginWithGoogle = (redirectTo?: string) => {
-     localStorage.setItem("isAuthenticated", "true");
+  const loginWithGoogle = async (redirectTo?: string) => {
+     const data = await googleLogin();
+     setUser(data);
      navigate(redirectTo || "/plans");
   };
 
@@ -65,4 +71,3 @@ export const AuthProvider = ({ children }: { children: React.ReactNode }) => {
     </AuthContext.Provider>
   );
 };
-
