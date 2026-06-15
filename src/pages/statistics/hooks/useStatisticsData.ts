@@ -16,7 +16,7 @@ import {
 } from '../utils/statisticsHelpers';
 
 export function useStatisticsData() {
-  const [days, setDays] = useState<number | 'all'>(30);
+  const [days, setDays] = useState<number | 'all'>('all');
   const [summary, setSummary] = useState<StatsSummaryResponse | null>(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);

@@ -1,0 +1,182 @@
+[
+  {
+    "id": 1,
+    "name": "Band shrug",
+    "body_part": "neck",
+    "equipment": "band",
+    "description": "Step:1 Stand with",
+    "image_url": "/media/trmte8s.gif",
+    "brand": "global",
+    "target_muscles": [
+      "traps"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Barbell decline close grip to skull press",
+    "body_part": "arms",
+    "equipment": "barbell",
+    "description": "Step:1 Lie on",
+    "image_url": "/media/LMGXZn8.gif",
+    "brand": "global",
+    "target_muscles": [
+      "triceps"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Push-up inside leg kick",
+    "body_part": "legs",
+    "equipment": "body weight",
+    "description": "Step:1 Start in",
+    "image_url": "/media/0br45wL.gif",
+    "brand": "global",
+    "target_muscles": [
+      "glutes"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Cable incline fly (on stability ball)",
+    "body_part": "chest",
+    "equipment": "cable",
+    "description": "Step:1 Set up",
+    "image_url": "/media/27NNGFr.gif",
+    "brand": "global",
+    "target_muscles": [
+      "chest"
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Kettlebell double alternating hang clean",
+    "body_part": "arms",
+    "equipment": "kettlebell",
+    "description": "Step:1 Stand with",
+    "image_url": "/media/a4F9Oyc.gif",
+    "brand": "global",
+    "target_muscles": [
+      "biceps"
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Dumbbell contralateral forward lunge",
+    "body_part": "legs",
+    "equipment": "dumbbell",
+    "description": "Step:1 Stand with",
+    "image_url": "/media/ecl28tP.gif",
+    "brand": "global",
+    "target_muscles": [
+      "glutes"
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Barbell press sit-up",
+    "body_part": "waist",
+    "equipment": "barbell",
+    "description": "Step:1 Lie flat",
+    "image_url": "/media/wnEscH8.gif",
+    "brand": "global",
+    "target_muscles": [
+      "abs"
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Cable reverse one arm curl",
+    "body_part": "arms",
+    "equipment": "cable",
+    "description": "Step:1 Stand facing",
+    "image_url": "/media/gVlnLIJ.gif",
+    "brand": "global",
+    "target_muscles": [
+      "biceps"
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Dumbbell finger curls",
+    "body_part": "arms",
+    "equipment": "dumbbell",
+    "description": "Step:1 Sit on",
+    "image_url": "/media/mtXengz.gif",
+    "brand": "global",
+    "target_muscles": [
+      "forearms"
+    ]
+  },
+  {
+    "id": 10,
+    "name": "Band stiff leg deadlift",
+    "body_part": "legs",
+    "equipment": "band",
+    "description": "Step:1 Stand with",
+    "image_url": "/media/kuMiR2T.gif",
+    "brand": "global",
+    "target_muscles": [
+      "glutes"
+    ]
+  },
+  {
+    "id": 11,
+    "name": "Kettlebell goblet squat",
+    "body_part": "legs",
+    "equipment": "kettlebell",
+    "description": "Step:1 Stand with",
+    "image_url": "/media/ZA8b5hc.gif",
+    "brand": "global",
+    "target_muscles": [
+      "glutes"
+    ]
+  },
+  {
+    "id": 12,
+    "name": "Lever chest press",
+    "body_part": "chest",
+    "equipment": "leverage machine",
+    "description": "Step:1 Adjust the",
+    "image_url": "/media/DOoWcnA.gif",
+    "brand": "global",
+    "target_muscles": [
+      "chest"
+    ]
+  },
+  {
+    "id": 13,
+    "name": "Dumbbell incline biceps curl",
+    "body_part": "arms",
+    "equipment": "dumbbell",
+    "description": "Step:1 Sit on",
+    "image_url": "/media/F3xgbjF.gif",
+    "brand": "global",
+    "target_muscles": [
+      "biceps"
+    ]
+  },
+  {
+    "id": 14,
+    "name": "One arm against wall",
+    "body_part": "back",
+    "equipment": "body weight",
+    "description": "Step:1 Stand facing",
+    "image_url": "/media/ZZTGMKh.gif",
+    "brand": "global",
+    "target_muscles": [
+      "lats"
+    ]
+  },
+  {
+    "id": 15,
+    "name": "Squat on bosu ball",
+    "body_part": "legs",
+    "equipment": "bosu ball",
+    "description": "Step:1 Place the",
+    "image_url": "/media/T2fA5Ir.gif",
+    "brand": "global",
+    "target_muscles": [
+      "quadriceps"
+    ]
+  }
+]
